@@ -8,6 +8,19 @@
    src: url(../fonts/HelveticaNeueBold.woff);
 }
 
+.spacing_10{
+   height: 10px;
+}
+
+.spacing_20{
+   height: 20px;
+}
+
+.spacing_40{
+   height: 40px;
+}
+
+
 body{
    font-family: 'Helvetica Neue', Helvetica, sans-serif;
    background-color: black;
@@ -107,7 +120,7 @@ h3{
    height: auto;
 }
 
-#decorate_top_right {
+.decorate_top_right {
    position: absolute;
    top: 0;
    right: 0;
@@ -117,12 +130,46 @@ h3{
    height: 20px;
 }
 
-#decorate_bottom_left {
+.decorate_bottom_left {
    position: absolute;
-   bottom: 0;
+   bottom: 3px;
    left: 0;
    z-index: 2;
    background-image: url(../images/decorate_bottom_left.svg);
    width: 20px;
    height: 20px;
+}
+
+.spacing_40{
+   height: 40px;
+}
+
+h4{
+   font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 20px;
+   margin: auto;
+}
+
+#main_mid_line{
+   background-color: #ED1A29;
+   height: 2px;
+}
+
+#main-mid p{
+   font-size: 16px;
+   margin-top: 20px;
+}
+.main_mid_img{
+   position: relative;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+h5{
+   font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 40px;
+   margin: auto;
 }
