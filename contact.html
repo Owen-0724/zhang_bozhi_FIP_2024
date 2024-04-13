@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+    <body>
+        <h1 class="hidden">FIP</h1>
+            <button onclick="topFunction()" id="back_btn" title="Go to top"></button>
+            <header class="grid-con" id="main-header">
+                
+                <h2 class="hidden">Main Nav</h2>
+                <button id="burger" class="col-start-1 col-span-1"></button>
+                <a href="index.html"  id="header_logo" class="col-start-2 col-span-2"><img  src="images/zima_logo.svg" alt="zima_logo" width="90px"></a>
+                <img id="header_search" class="col-start-4 col-span-1" src="images/search_s.svg" alt="search" width="40px">   
+                
+            </header>
+            <div id="burger-con" class="col-span-full">
+                <ul>
+                    <li><a href="products.html">Our products</a></li>
+                    <li><a href="#">Where to buy</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+                <div class="bg_burger_1"></div>
+                <div class="bg_burger_2"></div>
+            </div>
+            <section id="contact-top" class="grid-con">
+                <h2 class="hidden">top</h2>
+                
+                <div id="top_text" class="col-span-full">
+                <div class="parallelogram">
+                    <h3>Contact Us</h3>
+                </div>
+                </div>
+            </section>
+
+            <section id="contact-mid" class="grid-con">
+                <h2 class="hidden">mid</h2>
+                <div id="contact_form" class="col-span-full">
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input name="fullName" type="text" placeholder="First & Last Name">
+                        <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+                        <textarea name="msg" placeholder="Comments here"></textarea>
+                        <input name="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="bg_1"></div>
+                <div class="bg_2"></div>
+            </section>
+
+            <section id="main-end" class="col-span-full">
+                <h2 class="hidden">end</h2>
+                <h5>Zima</h5>
+                <p>A few degrees cooler</p>
+            </section>
+            <div class="end_line full-width-grid-con"></div>
+        <footer class="col-span-full">
+            <h4>Follow Us</h4>
+            <div id="social_media_group">
+                <img src="images/facebook.svg">
+                <img src="images/x.svg">
+                <img src="images/ins.svg">
+            </div>
+            <img id="footer_logo" src="images/zima_logo.svg" width="90px">
+            <p>©2024 Molson Coors 
+                Beverage Company
+            </p>
+        </footer>
+
+
+        <script src="js/main.js"></script>   
+    </body>
+</html>
