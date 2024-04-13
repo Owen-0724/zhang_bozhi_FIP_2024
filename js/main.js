@@ -33,3 +33,57 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//lightbox
+
+const lightBox = document.querySelector('#lightbox');
+const content = document.querySelector('#lightbox article');
+const links = document.querySelectorAll('#products_1 div button a');
+
+let products = [
+    {
+        name: 'Zima Original Taste(Can)',
+        price: '$5',
+		size: '250ml',
+		ALC_VOL: '5%',
+        about: '21+ to enjoy. Refreshing citrus beverage. Malt beverage with natural flavor.'
+
+    }
+];
+
+function fillContent() {
+    console.log(this.dataset.productsIndex);
+
+    content.innerHTML = '';
+
+    if (!this.dataset.productsIndex){
+        return;
+    }
+
+    let productsName = document.createElement("h3");
+    productsName.textContent = products[this.dataset.productsIndex].name;
+    productsName.classList = 'lb_text';
+    content.appendChild(productsName);
+
+	let productsPrice = document.createElement("h3");
+    productsPrice.textContent = products[this.dataset.productsIndex].price;
+    productsPrice.classList = 'lb_text';
+    content.appendChild(productsPrice);
+
+	let productsSize = document.createElement("h3");
+    productsSize.textContent = products[this.dataset.productsIndex].size;
+    productsSize.classList = 'lb_text';
+    content.appendChild(productsSize);
+
+	let productsALC_VOL = document.createElement("h3");
+    productsALC_VOL.textContent = products[this.dataset.productsIndex].ALC_VOL;
+    productsALC_VOL.classList = 'lb_text';
+    content.appendChild(productsALC_VOL);
+
+    let productsAbout = document.createElement("p");
+    productsAbout.textContent = products[this.dataset.productsIndex].about;
+    productsAbout.classList = 'lb_p';
+    content.appendChild(productsAbout);
+}
+
+links.forEach(link => link.addEventListener('click', fillContent));
