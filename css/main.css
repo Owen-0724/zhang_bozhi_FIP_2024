@@ -1,0 +1,128 @@
+@font-face {
+   font-family: 'Helvetica Neue';
+   src: url(../fonts/HelveticaNeueRoman.woff);
+}
+
+@font-face {
+   font-family: 'Helvetica Neue Blod';
+   src: url(../fonts/HelveticaNeueBold.woff);
+}
+
+body{
+   font-family: 'Helvetica Neue', Helvetica, sans-serif;
+   background-color: black;
+   color: white;
+}
+
+button{
+   border: 0;
+}
+
+#burger{
+   width: 30px;
+   height: 30px;
+   background: url(../images/burger.svg) no-repeat center;
+   align-self: center;
+
+}
+
+#header_logo{
+   align-self: center;
+   margin: auto;
+}
+
+#header_search{
+   align-self: center;
+   justify-self: end;
+}
+
+
+header{
+   background-color: #184088;
+   height: 80px;
+}
+
+h3{
+   font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 30px;
+   letter-spacing: -1px;
+   margin: auto;
+}
+
+#left_arrows{
+   background: url(../images/left_arrows.svg) no-repeat center;
+   width: 10px;
+   height: 20px;
+   position: absolute;
+   left: 10px;
+   top: 50%;
+}
+
+#right_arrows{
+   background: url(../images/right_arrows.svg) no-repeat center;
+   width: 10px;
+   height: 20px;
+   position: absolute;
+   right: 10px;
+   top: 50%;
+}
+.parallelogram {
+   display: flex;
+   width: 270px;
+   height: 40px;
+   background-color: #184088;
+   color: white;
+   text-align: center;
+   margin: auto;
+   transform: skewX(-45deg);
+   
+}
+
+.parallelogram > h3 {
+   transform: skewX(45deg);
+   
+}
+
+#main-top {
+   position: relative;
+   width: 100%; 
+   height: auto; 
+}
+
+#top_text {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 1; 
+}
+
+.image-container {
+   position: relative;
+}
+
+#main_top_img {
+   width: 100%;
+   height: auto;
+}
+
+#decorate_top_right {
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 1;
+   background-image: url(../images/decorate_top_right.svg);
+   width: 20px;
+   height: 20px;
+}
+
+#decorate_bottom_left {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   z-index: 2;
+   background-image: url(../images/decorate_bottom_left.svg);
+   width: 20px;
+   height: 20px;
+}
