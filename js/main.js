@@ -38,7 +38,7 @@ function topFunction() {
 
 const lightBox = document.querySelector('#lightbox');
 const content = document.querySelector('#lightbox article');
-const links = document.querySelectorAll('#products_1 div button a');
+const links = document.querySelectorAll('.products_group div button a');
 
 let products = [
     {
@@ -48,7 +48,25 @@ let products = [
 		ALC_VOL: '5%',
         about: '21+ to enjoy. Refreshing citrus beverage. Malt beverage with natural flavor.'
 
-    }
+    },
+
+	{
+        name: 'Zima Original Taste',
+        price: '$7',
+		size: '250ml',
+		ALC_VOL: '5%',
+        about: '21+ to enjoy. Refreshing citrus beverage. Malt beverage with natural flavor.'
+
+    },
+
+	{
+        name: 'Zima Silver',
+        price: '$10',
+		size: '250ml',
+		ALC_VOL: '10%',
+        about: '21+ to enjoy. Refreshing citrus beverage. Higher alcohol by volume and richer malt flavour.'
+
+    },
 ];
 
 function fillContent() {

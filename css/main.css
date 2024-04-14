@@ -520,13 +520,19 @@ footer p{
    padding-top: 50px;
 }
 
-.lb_p, .lb_text { text-align: left; }
-
-.lb_p {
-   line-height: 1.6 !important;
-   margin-left: 0;
-   padding-top: 2em;
+.lb_p, .lb_text{
+   font-family: 'Helvetica Neue', Helvetica, sans-serif;
+   font-size: 16px;
+   text-align: left;
+   margin-top: 20px;
 }
 
-/* turn the lightbox on using the :target pseudo selector */
-.lightbox:target { display: block; }
+.lb_p {
+   font-size: 12px;
+   line-height: 1.6 !important;
+   margin-left: 0;
+}
+
+.lightbox:target { 
+   display: block; 
+}
