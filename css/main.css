@@ -489,7 +489,7 @@ footer p{
 }
 
 #contact_form input[type="submit"]:hover {
-   background-color: #184088;
+   background-color: gray;
    border-radius: 0;
 }
 
