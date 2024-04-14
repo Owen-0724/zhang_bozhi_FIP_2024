@@ -389,11 +389,13 @@ footer p{
    font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
    font-weight: bold;
    font-size: 14px;
+   color: #184088;
    margin: 0px 10px;
 }
 
 .buy_btn p {
    font-size: 16px;
+   color: white;
    margin: 0px 20px;
 }
 
@@ -482,57 +484,48 @@ footer p{
 
 .lightbox { 
    width: 100vw; /* vw = viewport width => screen width */
-   height: 100vh; /* vh = viewport height => screen height */
-
+   height: 60vh; /* vh = viewport height => screen height */
    position: absolute;
    top: 0;
    left: 0;
-
-   background-color: rgba(0, 0, 0, 0.85);
-   background-repeat: no-repeat;
-
-   background-size: 55vh; /* 55% of the viewport height */
-   background-position: 40px bottom;
-
+   background-color: white;
    z-index: 5000;
-
    display: none;
 }
 
-.lightbox_close {
-   position: relative;
-   top: 20px;
-   left: 95%;
-
-   color: white;
-   font-size: 3em;
-
-   text-decoration: none;
-
-   font-weight: bolder;
+.lightbox div {
+   padding-top: 0px;
 }
 
-.lightbox_close:hover { opacity: 0.5; color: red; }
-
-.lightbox article {
-   width: 55%;
-   margin-left: 40%;
-   padding-top: 50px;
-}
-
-.lb_p, .lb_text{
+.lb_p, .lb_text, .lb_l{
    font-family: 'Helvetica Neue', Helvetica, sans-serif;
    font-size: 16px;
    text-align: left;
+   letter-spacing: 0px;
+   color: black;
+   margin: 0px;
+   padding: 0px;
    margin-top: 20px;
 }
 
 .lb_p {
    font-size: 12px;
-   line-height: 1.6 !important;
+   line-height: 1.6;
    margin-left: 0;
 }
 
 .lightbox:target { 
-   display: block; 
+   display: grid; 
+}
+
+.lb_l{
+   font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+   font-size: 16px;
+   text-align: left;
+   display: inline;
+   
+}
+
+#lb__btn_group{
+   justify-self: left;
 }
