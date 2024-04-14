@@ -40,6 +40,7 @@ button{
    height: 30px;
    background: url(../images/burger.svg) no-repeat center;
    align-self: center;
+   transition: all .5s ease;
 
 }
 
@@ -145,6 +146,11 @@ h3{
    right: 10px;
    top: 50%;
 }
+
+#left_arrows:hover, #right_arrows:hover{
+   opacity: 0.6; 
+}
+
 .parallelogram {
    display: flex;
    width: 270px;
@@ -296,6 +302,10 @@ footer {
    margin-top: 10px;
 }
 
+#social_media_group img:hover{
+   opacity: 0.8;
+}
+
 #footer_logo{
    margin-top: 20px;
 }
@@ -316,6 +326,10 @@ footer p{
    width: 40px;
    height: 40px;
    z-index: 99;
+}
+
+#back_btn:hover{
+   opacity: 0.8;
 }
 
 /*---- Our Products ----*/
@@ -398,6 +412,21 @@ footer p{
    color: white;
    margin: 0px 20px;
 }
+
+.details_btn:hover {
+   border: 4px solid #ED1A29;
+   color: #ED1A29;
+}
+
+.details_btn p:hover {
+   color: #ED1A29;
+}
+
+.buy_btn:hover {
+   background-color: #ED1A29;
+}
+
+
 
 #products-mid .bg_1{
    transform: rotate(90deg);
