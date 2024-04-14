@@ -51,6 +51,7 @@ button{
 #header_logo{
    align-self: center;
    margin: auto;
+   z-index: 10;
 }
 
 #header_search{
@@ -604,10 +605,12 @@ footer p{
    #main-mid p{
       font-size: 24px;
       margin-top: 60px;
+      
    }
 
    #main_mid_p_2{
       order: 2;
+      margin-top: 60px;
    }
    
    #main_mid_img_2{
@@ -663,6 +666,74 @@ footer p{
       margin-right: 10px;
    }
 
+   /*--Our Products--*/
+
+   .parallelogram{
+      margin-top: 80px;
+   }
+
+   #products-mid{
+      margin-top: 100px;
+   }
+
+   #products_1_img{
+      order: 1;
+   }
+
+   #products_2_img{
+      order: 2;
+   }
+
+   #products_3_img{
+      order: 3;
+   }
+
+   #products_1{
+      order: 4;
+   }
+
+   #products_2{
+      order: 5;
+   }
+
+   #products_3{
+      order: 6;
+   }
+
+   .products_group h4{
+      font-size: 20px;
+   }
+
+   .products_group h3 {
+      margin-top: 10px;
+      font-size: 30px;
+      letter-spacing: 0px;
+   }
+
+   .products_btn_group {
+      position: relative;
+      height: 56px;
+      margin-top: -10%;
+      margin-left: 50%;
+      
+   }
+
+   #lb__btn_group {
+      justify-self: left;
+      margin: 0px;
+      margin-top: 10px;
+   }
+
+   #products-mid .bg_2 {
+      top: 50%;
+   }
+
+   /*-- Contact Us ----*/
+   
+   #contact-mid{
+      margin-top: 120px;
+   }
+   
 }
 
 /*---- desktop ----*/
@@ -724,6 +795,10 @@ footer p{
       font-size: 60px;
    }
 
+   #main-mid {
+      margin-top: 120px;
+   }
+
    h5{
       font-size: 100px;
    }
@@ -737,4 +812,47 @@ footer p{
       font-size: 30px;
    }
 
+   /*--Our Products--*/
+
+   #products-top {
+      margin-top: 80px;
+   }
+
+   #products-mid {
+      margin-top: 140px;
+   }
+
+   .products_group h4{
+      font-size: 30px;
+   }
+
+   .products_group h3 {
+      margin-top: 20px;
+      font-size: 60px;
+      letter-spacing: 0px;
+   }
+
+   .products_btn_group {
+      position: relative;
+      height: 56px;
+      margin-top: -20%;
+      margin-left: 50%;
+      
+   }
+
+   #lb__btn_group {
+      justify-self: left;
+      margin: 0px;
+      margin-top: 10px;
+   }
+
+   /*-- Contact Us ----*/
+
+   #contact-top{
+      margin-top: 80px;
+   }
+
+   #contact-mid{
+      margin-top: 160px;
+   }
 }
