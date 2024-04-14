@@ -520,7 +520,7 @@ footer p{
    width: 100vw; /* vw = viewport width => screen width */
    height: 60vh; /* vh = viewport height => screen height */
    position: absolute;
-   top: 0;
+   top: 40%;
    left: 0;
    background-color: white;
    z-index: 5000;
