@@ -558,3 +558,104 @@ footer p{
 #lb__btn_group{
    justify-self: left;
 }
+
+/*---- tablet ----*/
+
+@media screen and (min-width: 768px) {
+
+   .decorate_top_right, .decorate_bottom_left{
+      width: 40px;
+      height: 40px;
+      z-index: 0;
+   }
+
+   .parallelogram {
+      width: 600px;
+      height: 100px;
+      z-index: 100;
+   }
+
+   h3{
+      font-size: 70px;
+      letter-spacing: -4px;
+   }
+
+   h4{
+      font-size: 50px;
+   }
+
+   h5{
+      font-size: 70px;
+   }
+
+   #main-mid{
+      margin-top: 60px;
+   }
+
+   #main-mid h4{
+      text-align: left;
+      margin: unset;
+   }
+
+   #main-mid p{
+      font-size: 24px;
+      margin-top: 60px;
+   }
+
+   #main_mid_p_2{
+      order: 2;
+   }
+   
+   #main_mid_img_2{
+      order: 1;
+      margin: 0px;
+      margin-top: 60px;
+      left: 0%;
+   }
+
+   #main_mid_img_1{
+      margin: 0px;
+      right: 0%;
+   }
+
+   #main-end p{
+      font-size: 20px;
+   }
+
+   .end_line{
+      height: 4px;
+   }
+
+   #footer_logo{
+      order: 1;
+      margin: auto;
+   }
+
+   footer p{
+      order: 2;
+      font-size: 20px;
+      text-align: left;
+      margin: 0px;
+      margin: auto;
+   }
+
+   footer h4{
+      order: 3;
+      font-size: 30px;
+      text-align: left;
+      margin: 0px;
+      
+   }
+
+   #social_media_group{
+      order: 4;
+      text-align: left;
+      margin-bottom: 40px;
+   }
+
+   #social_media_group img{
+      margin: 0;
+      margin-right: 10px;
+   }
+
+}   
