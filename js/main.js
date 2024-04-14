@@ -37,7 +37,11 @@ function topFunction() {
 //lightbox
 
 const lightBox = document.querySelector('#lightbox');
-const content = document.querySelector('#lightbox article');
+const content1 = document.querySelector('#lightbox #lb_products');
+const content2 = document.querySelector('#lightbox #lb_price');
+const content3 = document.querySelector('#lightbox #lb_size');
+const content4 = document.querySelector('#lightbox #lb_alc');
+const content5 = document.querySelector('#lightbox #lb_about');
 const links = document.querySelectorAll('.products_group div button a');
 
 let products = [
@@ -72,7 +76,11 @@ let products = [
 function fillContent() {
     console.log(this.dataset.productsIndex);
 
-    content.innerHTML = '';
+    content1.innerHTML = '';
+	content2.innerHTML = '';
+	content3.innerHTML = '';
+	content4.innerHTML = '';
+	content5.innerHTML = '';
 
     if (!this.dataset.productsIndex){
         return;
@@ -81,27 +89,27 @@ function fillContent() {
     let productsName = document.createElement("h3");
     productsName.textContent = products[this.dataset.productsIndex].name;
     productsName.classList = 'lb_text';
-    content.appendChild(productsName);
+    content1.appendChild(productsName);
 
 	let productsPrice = document.createElement("h3");
     productsPrice.textContent = products[this.dataset.productsIndex].price;
-    productsPrice.classList = 'lb_text';
-    content.appendChild(productsPrice);
+    productsPrice.classList = 'lb_text col-start-3 col-span-2';
+    content2.appendChild(productsPrice);
 
 	let productsSize = document.createElement("h3");
     productsSize.textContent = products[this.dataset.productsIndex].size;
     productsSize.classList = 'lb_text';
-    content.appendChild(productsSize);
+    content3.appendChild(productsSize);
 
 	let productsALC_VOL = document.createElement("h3");
     productsALC_VOL.textContent = products[this.dataset.productsIndex].ALC_VOL;
     productsALC_VOL.classList = 'lb_text';
-    content.appendChild(productsALC_VOL);
+    content4.appendChild(productsALC_VOL);
 
     let productsAbout = document.createElement("p");
     productsAbout.textContent = products[this.dataset.productsIndex].about;
     productsAbout.classList = 'lb_p';
-    content.appendChild(productsAbout);
+    content5.appendChild(productsAbout);
 }
 
 links.forEach(link => link.addEventListener('click', fillContent));
