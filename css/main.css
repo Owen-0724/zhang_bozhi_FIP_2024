@@ -20,6 +20,10 @@
    height: 40px;
 }
 
+#burger-con-l{
+   display: none;
+}
+
 a{
    text-decoration: none;
    color: black;
@@ -47,6 +51,7 @@ button{
 #header_logo{
    align-self: center;
    margin: auto;
+   z-index: 10;
 }
 
 #header_search{
@@ -557,4 +562,297 @@ footer p{
 
 #lb__btn_group{
    justify-self: left;
+}
+
+/*---- tablet ----*/
+
+@media screen and (min-width: 768px) {
+
+   .decorate_top_right, .decorate_bottom_left{
+      width: 40px;
+      height: 40px;
+      z-index: 0;
+   }
+
+   .parallelogram {
+      width: 600px;
+      height: 100px;
+      z-index: 100;
+   }
+
+   h3{
+      font-size: 70px;
+      letter-spacing: -4px;
+   }
+
+   h4{
+      font-size: 50px;
+   }
+
+   h5{
+      font-size: 70px;
+   }
+
+   #main-mid{
+      margin-top: 60px;
+   }
+
+   #main-mid h4{
+      text-align: left;
+      margin: unset;
+   }
+
+   #main-mid p{
+      font-size: 24px;
+      margin-top: 60px;
+      
+   }
+
+   #main_mid_p_2{
+      order: 2;
+      margin-top: 60px;
+   }
+   
+   #main_mid_img_2{
+      order: 1;
+      margin: 0px;
+      margin-top: 60px;
+      left: 0%;
+   }
+
+   #main_mid_img_1{
+      margin: 0px;
+      margin-top: 60px;
+      right: 0%;
+   }
+
+   #main-end p{
+      font-size: 20px;
+   }
+
+   .end_line{
+      height: 4px;
+   }
+
+   #footer_logo{
+      order: 1;
+      margin: auto;
+   }
+
+   footer p{
+      order: 2;
+      font-size: 20px;
+      text-align: left;
+      margin: 0px;
+      margin: auto;
+   }
+
+   footer h4{
+      order: 3;
+      font-size: 30px;
+      text-align: left;
+      margin: 0px;
+      
+   }
+
+   #social_media_group{
+      order: 4;
+      text-align: left;
+      margin-bottom: 40px;
+   }
+
+   #social_media_group img{
+      margin: 0;
+      margin-right: 10px;
+   }
+
+   /*--Our Products--*/
+
+   .parallelogram{
+      margin-top: 80px;
+   }
+
+   #products-mid{
+      margin-top: 100px;
+   }
+
+   #products_1_img{
+      order: 1;
+   }
+
+   #products_2_img{
+      order: 2;
+   }
+
+   #products_3_img{
+      order: 3;
+   }
+
+   #products_1{
+      order: 4;
+   }
+
+   #products_2{
+      order: 5;
+   }
+
+   #products_3{
+      order: 6;
+   }
+
+   .products_group h4{
+      font-size: 20px;
+   }
+
+   .products_group h3 {
+      margin-top: 10px;
+      font-size: 30px;
+      letter-spacing: 0px;
+   }
+
+   .products_btn_group {
+      position: relative;
+      height: 56px;
+      margin-top: -10%;
+      margin-left: 50%;
+      
+   }
+
+   #lb__btn_group {
+      justify-self: left;
+      margin: 0px;
+      margin-top: 10px;
+   }
+
+   #products-mid .bg_2 {
+      top: 50%;
+   }
+
+   /*-- Contact Us ----*/
+   
+   #contact-mid{
+      margin-top: 120px;
+   }
+   
+}
+
+/*---- desktop ----*/
+
+@media screen and (min-width: 1200px) { 
+
+   #burger{
+      display: none;
+   }
+
+   #burger-con-l {
+      display: block;
+   }
+
+   #burger-con-l ul li, #burger-con ul li:first-child {
+      border: none;
+      display: inline;
+      margin-right: 25px;
+   }
+
+   #burger-con-l ul li a {
+      display: inline;
+      font-family: 'Helvetica Neue Bold', Helvetica, sans-serif;
+      font-size: 20px;
+      color: white;
+      margin-right: 20px;
+   }
+
+   #burger-con-l ul li a:hover{
+      color: #ED1A29;
+   }
+
+   #burger-con-l ul li {
+      margin-right: 10px;
+   }
+
+   #burger-con-l ul li:last-child {
+      margin-right: 0px;
+   }
+
+   #left_arrows, #right_arrows {
+      width: 30px;
+      height: 60px;
+      position: absolute;
+      margin: auto;
+   }
+   
+   h3{
+      font-size: 80px;
+   }
+
+   .parallelogram {
+      width: 800px;
+      height: 170px;
+      z-index: 100;
+   }
+
+   #main-mid h4 {
+      font-size: 60px;
+   }
+
+   #main-mid {
+      margin-top: 120px;
+   }
+
+   h5{
+      font-size: 100px;
+   }
+
+   #main-end p {
+      font-size: 30px;
+      letter-spacing: 10px;
+   }
+
+   footer p,footer h4 {
+      font-size: 30px;
+   }
+
+   /*--Our Products--*/
+
+   #products-top {
+      margin-top: 80px;
+   }
+
+   #products-mid {
+      margin-top: 140px;
+   }
+
+   .products_group h4{
+      font-size: 30px;
+   }
+
+   .products_group h3 {
+      margin-top: 20px;
+      font-size: 60px;
+      letter-spacing: 0px;
+   }
+
+   .products_btn_group {
+      position: relative;
+      height: 56px;
+      margin-top: -20%;
+      margin-left: 50%;
+      
+   }
+
+   #lb__btn_group {
+      justify-self: left;
+      margin: 0px;
+      margin-top: 10px;
+   }
+
+   /*-- Contact Us ----*/
+
+   #contact-top{
+      margin-top: 80px;
+   }
+
+   #contact-mid{
+      margin-top: 160px;
+   }
 }

@@ -14,8 +14,19 @@
                 
                 <h2 class="hidden">Main Nav</h2>
                 <button id="burger" class="col-start-1 col-span-1"></button>
-                <a href="index.html"  id="header_logo" class="col-start-2 col-span-2"><img  src="images/zima_logo.svg" alt="zima_logo" width="90px"></a>
-                <img id="header_search" class="col-start-4 col-span-1" src="images/search_s.svg" alt="search" width="40px">   
+                <a href="index.html"  id="header_logo" 
+                class="col-start-2 col-span-2 m-col-start-6 m-col-span-2 l-col-start-1 l-col-span-1"><img  src="images/zima_logo.svg" alt="zima_logo" width="90px">
+                </a>
+                <div id="burger-con-l" class="l-col-start-2 l-col-end-11">
+                    <ul>
+                        <li><a href="products.html">Our products</a></li>
+                        <li><a href="#">Where to buy</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <img id="header_search" class="col-start-4 col-span-1 m-col-start-12" src="images/search_s.svg" alt="search" width="40px">   
                 
             </header>
             <div id="burger-con" class="col-span-full">
@@ -29,6 +40,7 @@
                 <div class="bg_burger_1"></div>
                 <div class="bg_burger_2"></div>
             </div>
+
             <section id="contact-top" class="grid-con">
                 <h2 class="hidden">top</h2>
                 
@@ -41,7 +53,7 @@
 
             <section id="contact-mid" class="grid-con">
                 <h2 class="hidden">mid</h2>
-                <div id="contact_form" class="col-span-full">
+                <div id="contact_form" class="col-span-full m-col-start-2 m-col-end-12">
                     <form action="email.php" method="POST" enctype="text/plain">
                         <input name="fullName" type="text" placeholder="First & Last Name">
                         <input name="contactInfo" type="text" required placeholder="Phone number or Email">
@@ -59,15 +71,15 @@
                 <p>A few degrees cooler</p>
             </section>
             <div class="end_line full-width-grid-con"></div>
-        <footer class="col-span-full">
-            <h4>Follow Us</h4>
-            <div id="social_media_group">
+        <footer class="col-span-full m-grid-con">
+            <h4 class="m-col-start-10 m-col-span-3">Follow Us</h4>
+            <div id="social_media_group" class="m-col-start-10 m-col-span-3">
                 <img src="images/facebook.svg">
                 <img src="images/x.svg">
                 <img src="images/ins.svg">
             </div>
-            <img id="footer_logo" src="images/zima_logo.svg" width="90px">
-            <p>©2024 Molson Coors 
+            <img id="footer_logo" class="m-col-start-1 m-col-span-1" src="images/zima_logo.svg" width="90px">
+            <p class="m-col-start-2 m-col-span-3">©2024 Molson Coors 
                 Beverage Company
             </p>
         </footer>
